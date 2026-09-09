@@ -1,66 +1,74 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-input {border: 0px;
-    border-bottom: solid 1px }
-    input:focus { border: solid 1px limegreen;
-      outline: none
-    }
-    
-    input:hover { border: solid 1px red
-}
-main {
-    background-color: gray;
-    width: 360px;
-    height: 650px;
-    align-items: center;
-    border-radius: 10px;
-    justify-items: center;
-    box-shadow: 5px 0px 0px black;
-}
-div{
-    margin: 40px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    
-    
-}
-label{
-    align-items: center;
-    transition: all 0.3s;
-}
-input{
-   width: 260px;
-   height: 35px;
-    border-radius: 5px;
-    transition: all 0.3s;
-    font-size: 17px;
-    box-shadow: 2px 0px 0px black;
-}
-div:hover input{
+* { 
+    margin: 0; 
+    box-sizing: border-box; 
+  } 
   
-    position: relative;
-    top: 2px;
-   
+  body { 
+    height: 100vh; 
+    margin: 0; 
+    
+    display: grid; 
+    
+    grid-template-columns: 1fr 1fr 1fr; 
 
-}
-div:hover label{
-
-    position: relative;
-    top: -2px;
-
-
-}
-
-label, input {
+    grid-template-rows: 1fr 1fr 1fr; 
+  } 
+  
+  form { 
+    background-color: gray; 
+ 
+ 
+    border-radius: 10px; 
+    box-shadow: 5px 0px 0px black; 
+    
+    grid-column: 2; 
+    grid-row: 2; 
+ 
+    justify-self: center; 
+    align-self: center; 
+  } 
+  
+  div { 
+    margin: 40px; 
+    font-size: 20px; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: white; 
+  } 
+  
+  label { 
     display: block;
+    align-items: center; 
+    transition: all 0.3s; 
+  } 
+  
+  input { 
+    display: block;
+    width: 260px; 
+    height: 35px; 
+    border: 0px; 
+    border-bottom: solid 1px; 
+    border-radius: 5px; 
+    transition: all 0.3s; 
+    font-size: 17px; 
+    box-shadow: 2px 0px 0px black; 
+  } 
+  
+  input:focus { 
+    border: solid 1px limegreen; 
+    outline: none; 
+  } 
+  
+  input:hover { 
+    border: solid 1px red; 
+  } 
+  
+  div:hover input { 
+    position: relative; 
+    top: 2px; 
+  } 
+  
+  div:hover label { 
+    position: relative; 
+    top: -2px; 
   }
+  
