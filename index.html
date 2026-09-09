@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6767</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <main>
+        <div>
+            <label > Nome: </label>
+            <input type="text" placeholder="" id="nome"  oninput=mascara_nome() maxlength="40">
+    
+        </div>
+        <div>
+            <label > Endereço: </label>
+            <input type="text" placeholder="" id="endereço"  oninput=mascara_endereço() maxlength="30">
+    
+        </div>
+        <div>
+            <label>Tel</label>
+            <input type="tel" placeholder="(31)99999-9999" id="telefone"  oninput=mascara_telefone() maxlength="14">
+        </div>
+        <div>
+            <label > CPF </label>
+            <input type="text" placeholder="" id="cpf"  oninput=mascara_cpf() maxlength="14">
+    
+        </div>
+        <div>
+            <label>CEP</label>
+            <input type="text" id="cep" oninput=mascara_cep() maxlength="10">
+        </div>
+        <div>
+            <label>CNPJ</label>
+            <input type="text" id="cnpj" oninput=mascara_cnpj() maxlength="18">
+    
+        </div>
+
+    </main>
+  
+    
+    
+    
+</body>
+
+</html>
